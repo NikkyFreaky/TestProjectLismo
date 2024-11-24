@@ -32,7 +32,7 @@ import BaseIcons from '../BaseIcons.vue'
           <a href="#" :class="style.header__user_name">Иван Иванов</a>
         </div>
 
-        <button :class="style.header__logout">Выход</button>
+        <button :class="style.header__logout_button">Выход</button>
       </div>
     </div>
   </header>
