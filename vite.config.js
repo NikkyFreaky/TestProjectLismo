@@ -17,8 +17,7 @@ export default defineConfig({
     preprocessorOptions: {
       less: {
         additionalData: `
-        @import '@/styles/global/variables.less';
-        @import '@/styles/global/mixins.less';
+        @import '@/assets/styles/variables.less';
         `,
       },
     },

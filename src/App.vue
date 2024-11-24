@@ -1,7 +1,9 @@
-<script></script>
+<script setup>
+import PageHeader from './components/Header/PageHeader.vue'
+</script>
 
 <template>
-  <div></div>
+  <div>
+    <PageHeader />
+  </div>
 </template>
-
-<style lang="less"></style>
