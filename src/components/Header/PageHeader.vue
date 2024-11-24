@@ -1,38 +1,39 @@
 <script setup>
-import style from './PageHeader.module.less'
 import BaseIcons from '../BaseIcons.vue'
 </script>
 
+<style scoped src="./PageHeader.less"></style>
+
 <template>
-  <header :class="style.header">
-    <div :class="style.header__logo">
-      <a href="#" :class="style.header__logo_link">
-        <BaseIcons name="tusur-logo" :class="style.header__logo_img" />
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a href="#" class="page-header__logo_link">
+        <BaseIcons name="tusur-logo" class="page-header__logo_img" />
       </a>
     </div>
 
-    <div :class="style.header__main">
-      <div :class="style.header__control">
+    <div class="page-header__main">
+      <div class="page-header__control">
         <a href="#">
-          <BaseIcons name="notification" :class="style.header__icon" />
+          <BaseIcons name="notification" class="page-header__icon" />
         </a>
         <a href="#">
-          <BaseIcons name="chat" :class="style.header__icon" />
+          <BaseIcons name="chat" class="page-header__icon" />
         </a>
         <a href="#">
-          <BaseIcons name="calendar" :class="style.header__icon" />
+          <BaseIcons name="calendar" class="page-header__icon" />
         </a>
       </div>
 
-      <div :class="style.header__profile">
-        <div :class="style.header__user">
+      <div class="page-header__profile">
+        <div class="page-header__user">
           <a href="#">
-            <BaseIcons name="user-profile-avatar" :class="style.header__avatar" />
+            <BaseIcons name="user-profile-avatar" class="page-header__avatar" />
           </a>
-          <a href="#" :class="style.header__user_name">Иван Иванов</a>
+          <a href="#" class="page-header__user_name">Иван Иванов</a>
         </div>
 
-        <button :class="style.header__logout_button">Выход</button>
+        <button class="page-header__logout_button">Выход</button>
       </div>
     </div>
   </header>
