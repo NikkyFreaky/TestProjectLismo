@@ -1,7 +1,5 @@
-<script setup>
-import style from './PageFooter.module.less'
-</script>
+<style scoped src="./PageFooter.less"></style>
 
 <template>
-  <footer :class="style.footer">ТУСУР</footer>
+  <footer class="page-footer">ТУСУР</footer>
 </template>
