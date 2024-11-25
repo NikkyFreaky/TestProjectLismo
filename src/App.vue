@@ -1,11 +1,13 @@
 <script setup>
-import PageHeader from './components/header/PageHeader.vue'
-import PageSidebar from './components/sidebar/PageSidebar.vue'
+import Header from './components/header/PageHeader.vue'
+import Sidebar from './components/sidebar/PageSidebar.vue'
+import Main from './components/main/PageMain.vue'
 </script>
 
 <template>
   <div>
-    <PageHeader />
-    <PageSidebar />
+    <Header />
+    <Main />
+    <Sidebar />
   </div>
 </template>

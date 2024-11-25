@@ -1,0 +1,47 @@
+.page-main {
+  margin: 75px 0 0 335px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__background {
+    background-image: url('@/assets/images/background.png');
+    height: 449px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__wrapper {
+    flex: 1;
+    margin-top: -282px;
+    padding-top: 30px;
+
+    border-radius: 24px 24px 0px 0px;
+    background-color: @app_bg_color;
+  }
+
+  &__content {
+    max-width: 1100px;
+    width: 100%;
+    margin: -127px 242.5px 0 242.5px;
+  }
+
+  &__course-description {
+    background: @main_bg_color;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__course-progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    padding: 30px 40px 30px 40px;
+
+    border-radius: 8px;
+    background: @main_bg_color;
+  }
+}

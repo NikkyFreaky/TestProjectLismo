@@ -227,4 +227,49 @@ export default {
       fill="#71809B"
     />
   </svg>
+
+  <svg
+    v-else-if="name === 'content'"
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M17.7778 0H2.22222C1 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V2.22222C20 1 19 0 17.7778 0ZM18.0952 18.0952H1.90476V1.90476H18.0952V18.0952Z"
+      fill="#71809B"
+    />
+    <path d="M4 6H16" stroke="#71809B" stroke-width="2" />
+    <path d="M4 10H16" stroke="#71809B" stroke-width="2" />
+    <path d="M4 14H13" stroke="#71809B" stroke-width="2" />
+  </svg>
+
+  <svg
+    v-else-if="name === 'arrow-right'"
+    width="8"
+    height="13"
+    viewBox="0 0 8 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5.74999 6.97501L0.799988 2.02501L1.87499 0.950012L7.89999 6.97501L1.87499 13L0.799988 11.925L5.74999 6.97501Z"
+      fill="#8593AB"
+    />
+  </svg>
+
+  <svg
+    v-else-if="name === 'arrow-down'"
+    width="13"
+    height="8"
+    viewBox="0 0 13 8"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.02499 5.25005L10.975 0.300049L12.05 1.37505L6.02499 7.40005L-1.23978e-05 1.37505L1.07499 0.300049L6.02499 5.25005Z"
+      fill="#71809B"
+    />
+  </svg>
 </template>

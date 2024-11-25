@@ -1,19 +1,24 @@
 <script setup>
-import style from './PageSidebar.module.less'
-import BaseButtons from '../buttons/BaseButtons.vue'
 import BaseIcons from '../BaseIcons.vue'
+import Button from '../buttons/BaseButtons.vue'
+import Content from '../sidebar-content/SidebarContent.vue'
 </script>
 
+<style scoped src="./PageSidebar.less"></style>
+
 <template>
-  <aside :class="style.sidebar">
-    <BaseButtons type="back" />
+  <aside class="page-sidebar">
+    <Button type="back" />
     <nav>
       <ul>
         <li>
-          <a href="#" :class="style.sidebar__item"> <BaseIcons name="people" />Участники </a>
+          <Content />
         </li>
         <li>
-          <a href="#" :class="style.sidebar__item"> <BaseIcons name="grade" />Оценки </a>
+          <a href="#" class="page-sidebar__item"> <BaseIcons name="people" />Участники </a>
+        </li>
+        <li>
+          <a href="#" class="page-sidebar__item"> <BaseIcons name="grade" />Оценки </a>
         </li>
       </ul>
     </nav>
