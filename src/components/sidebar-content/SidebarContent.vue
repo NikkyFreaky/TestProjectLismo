@@ -16,6 +16,7 @@ const clickButton = () => {
       <BaseIcons name="content" /> Содержание
       <BaseIcons name="arrow-down" v-if="isClicked" />
       <BaseIcons name="arrow-right" v-else-if="!isClicked" />
+      <slot></slot>
     </div>
   </div>
 </template>

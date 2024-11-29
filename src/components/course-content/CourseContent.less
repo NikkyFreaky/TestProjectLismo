@@ -1,0 +1,41 @@
+.course-content {
+  padding: 30px 30px 30px 30px;
+  border-radius: 8px;
+  background: @main_bg_color;
+  margin-bottom: 25px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 10px;
+
+    &-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &-open {
+      gap: 21px;
+    }
+
+    &-closed {
+      gap: 26px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  &__toggle-all {
+    font-size: 16px;
+    line-height: 22px;
+    color: #273766;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+}

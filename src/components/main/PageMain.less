@@ -16,6 +16,7 @@
     flex: 1;
     margin-top: -282px;
     padding-top: 30px;
+    padding-bottom: 25px;
 
     border-radius: 24px 24px 0px 0px;
     background-color: @app_bg_color;
@@ -31,6 +32,7 @@
     background: @main_bg_color;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 30px -10px #46495e26;
   }
 
   &__course-progress-bar {
@@ -43,5 +45,26 @@
 
     border-radius: 8px;
     background: @main_bg_color;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0px 0px 30px -10px #46495e26;
+  }
+
+  &__course-content {
+    max-width: 1040px;
+    width: 100%;
+    padding: 30px 30px 0;
+
+    &-description {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 13px 0 0 14px;
+    }
+
+    &-list {
+      width: 1016px;
+      margin-top: 15px;
+    }
   }
 }

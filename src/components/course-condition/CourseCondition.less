@@ -1,0 +1,49 @@
+.course-condition {
+  max-width: 350px;
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 14.63px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  margin-left: auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 25px;
+    margin-bottom: 6px;
+    border-radius: 15px;
+    background-color: #bcdfff7b;
+
+    padding: 5px 3px 5px 12px;
+  }
+
+  &__must-do {
+    width: max-content;
+    color: @text_btn_mark_color;
+    gap: 5px;
+    margin-left: auto;
+  }
+
+  &__done {
+    width: max-content;
+
+    color: @text_done;
+    background-color: #e7f3e9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    gap: 2px;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+}
