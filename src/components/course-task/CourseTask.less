@@ -2,18 +2,19 @@
   margin: 6px 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   max-width: 1016px;
   width: 100%;
+  padding: 10px 20px;
+  gap: 10px;
 
   &:hover {
     background-color: rgba(233, 242, 255, 0.4);
+    border-radius: 5px;
   }
   &__content {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    margin: 0 16px 0 -8px;
+    // padding: 10px 20px;
   }
 
   &__title {
@@ -32,6 +33,7 @@
   }
 
   &__closed {
-    margin: -17px 0 0 19px;
+    max-width: 976px;
+    width: 100%;
   }
 }

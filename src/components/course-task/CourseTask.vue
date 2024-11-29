@@ -7,6 +7,7 @@ import ClosedTask from '../closed-task/ClosedTask.vue'
 defineProps({
   icon: String,
   type: String,
+  title: String,
   closed: Boolean,
 })
 </script>
@@ -17,11 +18,25 @@ defineProps({
   <div class="course-task">
     <div class="course-task__content">
       <div class="course-task__title">
-        <BaseIcons name="task-roadmap" class="course-task__icon" v-if="icon === 'roadmap'" />
-        <BaseIcons name="task-glossary" class="course-task__icon" v-else-if="icon === 'glossary'" />
-        <BaseIcons name="task-exercise" class="course-task__icon" v-else-if="icon === 'exercise'" />
-        <BaseIcons name="task-folder" class="course-task__icon" v-else-if="icon === 'folder'" />
-        <BaseIcons name="task-file" class="course-task__icon" v-else-if="icon === 'file'" />
+        <a href="#">
+          <BaseIcons name="task-roadmap" class="course-task__icon" v-if="icon === 'roadmap'" />
+          <BaseIcons
+            name="task-glossary"
+            class="course-task__icon"
+            v-else-if="icon === 'glossary'"
+          />
+          <BaseIcons
+            name="task-exercise"
+            class="course-task__icon"
+            v-else-if="icon === 'exercise'"
+          />
+          <BaseIcons name="task-folder" class="course-task__icon" v-else-if="icon === 'folder'" />
+          <BaseIcons name="task-file" class="course-task__icon" v-else-if="icon === 'file'" />
+        </a>
+
+        <a href="#">
+          <p class="course-task__text">{{ title }}</p>
+        </a>
         <slot></slot>
       </div>
 

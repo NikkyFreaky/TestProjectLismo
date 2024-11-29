@@ -28,33 +28,19 @@ import PageFooter from '../footer/PageFooter.vue'
             <p class="page-main__course-content-description">Материалы для изучения</p>
             <ul class="page-main__course-content-list">
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="roadmap" type="condition">
-                    Список литературы по модулю
-                  </CourseTask>
-                </a>
+                <CourseTask icon="roadmap" type="condition" title="Список литературы по модулю" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="glossary" type="button"> Глоссарий </CourseTask>
-                </a>
+                <CourseTask icon="glossary" type="button" title="Глоссарий" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="exercise" type="condition-multiple"> Задание </CourseTask>
-                </a>
+                <CourseTask icon="exercise" type="condition-multiple" title="Задание" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="folder" type="button" closed>
-                    Дополнительная литература
-                  </CourseTask>
-                </a>
+                <CourseTask icon="folder" type="button" closed title="Дополнительная литература" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="file" type="button"> Файл </CourseTask>
-                </a>
+                <CourseTask icon="file" type="button" title="Файл" />
               </li>
             </ul>
           </div>
@@ -66,24 +52,16 @@ import PageFooter from '../footer/PageFooter.vue'
           <div class="page-main__course-content">
             <ul class="page-main__course-content-list">
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="roadmap" type="condition"> Лекция </CourseTask>
-                </a>
+                <CourseTask icon="roadmap" type="condition" title="Лекция" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="glossary" type="button"> Глоссарий </CourseTask>
-                </a>
+                <CourseTask icon="glossary" type="button" title="Глоссарий" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="exercise" type="condition-multiple"> Задание </CourseTask>
-                </a>
+                <CourseTask icon="exercise" type="condition-multiple" title="Задание" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="file" type="button"> Список литературы по модулю </CourseTask>
-                </a>
+                <CourseTask icon="file" type="button" title="Список литературы по модулю" />
               </li>
             </ul>
           </div>
@@ -93,24 +71,16 @@ import PageFooter from '../footer/PageFooter.vue'
           <div class="page-main__course-content">
             <ul class="page-main__course-content-list">
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="roadmap" type="condition"> Лекция </CourseTask>
-                </a>
+                <CourseTask icon="roadmap" type="condition" title="Лекция" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="glossary" type="button"> Глоссарий </CourseTask>
-                </a>
+                <CourseTask icon="glossary" type="button" title="Глоссарий" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="exercise" type="condition-multiple"> Задание </CourseTask>
-                </a>
+                <CourseTask icon="exercise" type="condition-multiple" title="Задание" />
               </li>
               <li class="page-main__course-content-item">
-                <a href="#">
-                  <CourseTask icon="file" type="button"> Список литературы по модулю </CourseTask>
-                </a>
+                <CourseTask icon="file" type="button" title="Список литературы по модулю" />
               </li>
             </ul>
           </div>
