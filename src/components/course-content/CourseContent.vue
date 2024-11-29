@@ -24,7 +24,10 @@ defineProps({
         :class="{ 'course-content__header-open': open, 'course-content__header-closed': !open }"
         @click="toggleOpen"
       >
-        <BaseIcons :name="open ? 'arrow-down' : 'arrow-right'" class="course-content__icon" />
+        <div class="course-content__icon">
+          <BaseIcons :name="open ? 'arrow-down' : 'arrow-right'" />
+        </div>
+
         <h4 class="course-content__title">{{ label }}</h4>
       </div>
       <span v-if="closeAll" @click="toggleOpen" class="course-content__toggle-all"
