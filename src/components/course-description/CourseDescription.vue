@@ -5,9 +5,9 @@
 <template>
   <div class="course-description">
     <div class="course-description__details">
-      <h1 class="course-description__title">
+      <h2 class="course-description__title">
         Финансовое управление и принципы планирования в здравоохранении
-      </h1>
+      </h2>
       <p class="course-description__text">
         На курсе рассматриваются современные представления об экономике здравоохранения и финансовом
         планировании, в том числе для ведения междисциплинарных проектов в сфере медицины, экономики

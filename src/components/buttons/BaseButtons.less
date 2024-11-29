@@ -1,4 +1,4 @@
-.button {
+.base-button {
   max-width: 275px;
   width: 100%;
 
@@ -14,5 +14,34 @@
 
     font-size: 15px;
     line-height: 18.29px;
+  }
+
+  &__mark {
+    width: 235px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid @border_color;
+    border-radius: 6px;
+
+    color: @text_btn_mark_color;
+    line-height: 21.7px;
+  }
+
+  &__mark-done {
+    width: 144px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border: 1px solid @border_btn_mark_done_color;
+    border-radius: 6px;
+
+    color: @text_btn_mark_done_color;
+    line-height: 21.7px;
   }
 }
