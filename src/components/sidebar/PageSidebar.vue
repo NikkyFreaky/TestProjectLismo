@@ -1,18 +1,18 @@
 <script setup>
 import BaseIcons from '../BaseIcons.vue'
 import Button from '../buttons/BaseButtons.vue'
-import Content from '../sidebar-content/SidebarContent.vue'
+import SidebarContent from '../sidebar-content/SidebarContent.vue'
 </script>
 
 <style scoped src="./PageSidebar.less"></style>
 
 <template>
   <aside class="page-sidebar">
-    <Button type="back" />
-    <nav>
+    <Button type="back" class="page-sidebar__button" />
+    <nav class="page-sidebar__content">
       <ul>
         <li>
-          <Content />
+          <SidebarContent />
         </li>
         <li>
           <a href="#" class="page-sidebar__item"> <BaseIcons name="people" />Участники </a>
