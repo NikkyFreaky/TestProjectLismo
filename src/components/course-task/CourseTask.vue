@@ -37,7 +37,6 @@ defineProps({
         <a href="#">
           <p class="course-task__text">{{ title }}</p>
         </a>
-        <slot></slot>
       </div>
 
       <div class="course-task__type">
