@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import AdditionalTeachers from '../course-additional-teachers/AdditionalTeachers.vue'
+</script>
 
 <style scoped src="./CourseTeachers.less"></style>
 
@@ -29,6 +31,9 @@
           class="course-teachers__image"
         />
         <span class="course-teachers__name">А. А. Красина</span>
+      </li>
+      <li class="course-teachers__item">
+        <AdditionalTeachers />
       </li>
     </ul>
   </div>

@@ -17,11 +17,23 @@ defineProps({
     <div class="sidebar-task__content">
       <div class="sidebar-task__title">
         <a href="#">
-          <BaseIcons name="sidebar-roadmap" v-if="icon === 'roadmap'" />
-          <BaseIcons name="sidebar-glossary" v-else-if="icon === 'glossary'" />
-          <BaseIcons name="sidebar-exercise" v-else-if="icon === 'exercise'" />
-          <BaseIcons name="sidebar-folder" v-else-if="icon === 'folder'" />
-          <BaseIcons name="sidebar-file" v-else-if="icon === 'file'" />
+          <BaseIcons name="sidebar-roadmap" v-if="icon === 'roadmap'" class="sidebar-task__icon" />
+          <BaseIcons
+            name="sidebar-glossary"
+            v-else-if="icon === 'glossary'"
+            class="sidebar-task__icon"
+          />
+          <BaseIcons
+            name="sidebar-exercise"
+            v-else-if="icon === 'exercise'"
+            class="sidebar-task__icon"
+          />
+          <BaseIcons
+            name="sidebar-folder"
+            v-else-if="icon === 'folder'"
+            class="sidebar-task__icon"
+          />
+          <BaseIcons name="sidebar-file" v-else-if="icon === 'file'" class="sidebar-task__icon" />
         </a>
 
         <a href="#">
