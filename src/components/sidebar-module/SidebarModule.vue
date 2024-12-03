@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import BaseIcons from '../BaseIcons.vue'
 
-const open = ref(true)
+const open = ref(false)
 
 function toggleOpen() {
   open.value = !open.value

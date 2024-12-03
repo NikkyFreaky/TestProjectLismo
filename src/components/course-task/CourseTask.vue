@@ -2,7 +2,7 @@
 import BaseIcons from '../BaseIcons.vue'
 import Button from '../buttons/BaseButtons.vue'
 import CourseCondition from '../course-condition/CourseCondition.vue'
-import ClosedTask from '../closed-task/ClosedTask.vue'
+import ClosedTask from '../course-closed-task/ClosedTask.vue'
 
 defineProps({
   icon: String,

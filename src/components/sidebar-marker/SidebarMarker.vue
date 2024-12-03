@@ -2,7 +2,7 @@
 import BaseIcons from '../BaseIcons.vue'
 </script>
 
-<style scoped></style>
+<style scoped src="./SidebarMarker.less"></style>
 
 <template>
   <div>
