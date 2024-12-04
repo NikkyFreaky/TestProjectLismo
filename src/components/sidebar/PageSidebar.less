@@ -12,6 +12,10 @@
 
   gap: 30px;
 
+  @media @bw1340 {
+    display: none;
+  }
+
   &__button {
     padding: 30px 30px 0;
   }
@@ -20,9 +24,14 @@
     display: flex;
     align-items: center;
     gap: 22px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     line-height: 21.7px;
     height: 24px;
     padding: 0 30px;
+  }
+
+  &__active {
+    display: block;
+    background-color: white;
   }
 }

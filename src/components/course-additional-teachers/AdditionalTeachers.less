@@ -6,6 +6,10 @@
     font-weight: 500;
     line-height: 22px;
     color: @text_light_color;
+
+    @media @bw600 {
+      font-size: 12px;
+    }
   }
 
   &__list {
@@ -39,6 +43,10 @@
 
     :hover {
       background-color: @additional_teachers_hover;
+    }
+
+    @media @bw960 {
+      right: 0;
     }
   }
 

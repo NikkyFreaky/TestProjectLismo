@@ -27,6 +27,16 @@
 
     color: @text_btn_mark_color;
     line-height: 21.7px;
+
+    @media @bw600 {
+      width: 180px;
+      font-size: 12px;
+    }
+
+    @media @bw370 {
+      width: 100px;
+      line-height: 12px;
+    }
   }
 
   &__mark-done {
@@ -42,5 +52,15 @@
 
     color: @text_btn_mark_done_color;
     line-height: 21.7px;
+
+    @media @bw600 {
+      font-size: 12px;
+    }
+
+    @media @bw370 {
+      width: 95px;
+      gap: 2px;
+      line-height: 12px;
+    }
   }
 }

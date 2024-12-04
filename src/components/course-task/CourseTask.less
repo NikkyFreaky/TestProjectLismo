@@ -11,10 +11,10 @@
     background-color: rgba(233, 242, 255, 0.4);
     border-radius: 5px;
   }
+
   &__content {
     display: flex;
     justify-content: space-between;
-    // padding: 10px 20px;
   }
 
   &__title {
@@ -25,6 +25,17 @@
 
     font-size: 16px;
     line-height: 22px;
+
+    @media @bw600 {
+      font-size: 12px;
+    }
+  }
+
+  &__icon {
+    @media @bw600 {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__type {
