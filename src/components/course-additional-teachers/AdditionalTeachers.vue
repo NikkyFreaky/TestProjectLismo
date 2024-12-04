@@ -4,29 +4,26 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 const open = ref(false)
 
 const teachers = ref([
-  {
-    name: 'К. К. Константинович',
-    image: '@/assets/images/course/teachers/konstantinovich.png',
-  },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
+  { name: 'К. К. Константинович' },
 ])
 
 const count = computed(() => teachers.value.length)
@@ -63,7 +60,7 @@ onUnmounted(() => {
     <ul v-if="open" class="additional-teachers__list">
       <li v-for="(teacher, index) in teachers" :key="index" class="additional-teachers__item">
         <img
-          :src="require('teacher.image')"
+          src="@/assets/images/course/teachers/konstantinovich.png"
           :alt="teacher.name"
           class="additional-teachers__image"
         />
