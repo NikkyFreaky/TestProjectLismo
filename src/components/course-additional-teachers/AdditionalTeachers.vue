@@ -3,28 +3,27 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 const open = ref(false)
 
-// Список учителей
 const teachers = ref([
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
 ])
 
 const count = computed(() => teachers.value.length)
