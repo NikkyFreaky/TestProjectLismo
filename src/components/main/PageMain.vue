@@ -1,4 +1,6 @@
 <script setup>
+import Header from '../header/PageHeader.vue'
+import Sidebar from '../sidebar/PageSidebar.vue'
 import CourseDescription from '../course-description/CourseDescription.vue'
 import CourseTeachers from '../course-teachers/CourseTeachers.vue'
 import CourseProgressBar from '../course-progress-bar/CourseProgressBar.vue'
@@ -10,6 +12,8 @@ import PageFooter from '../footer/PageFooter.vue'
 <style scoped src="./PageMain.less"></style>
 
 <template>
+  <Header />
+  <Sidebar />
   <main class="page-main">
     <div class="page-main__background"></div>
     <div class="page-main__wrapper">

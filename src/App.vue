@@ -6,8 +6,8 @@ import Main from './components/main/PageMain.vue'
 
 <template>
   <div>
-    <Header />
+    <!-- <Header /> -->
     <Main />
-    <Sidebar />
+    <!-- <Sidebar /> -->
   </div>
 </template>

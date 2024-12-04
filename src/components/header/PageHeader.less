@@ -1,10 +1,5 @@
 .page-header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-
   width: 100%;
   height: 75px;
 
@@ -19,7 +14,11 @@
     display: flex;
     align-items: center;
 
-    &_link {
+    @media @bw1340 {
+      display: none;
+    }
+
+    &-link {
       width: 100%;
       height: 38.57px;
       display: flex;
@@ -29,8 +28,20 @@
       border-right: 1px solid @border_color;
     }
 
-    &_img {
+    &-img {
       height: 28.57px;
+    }
+
+    &-active {
+      display: block;
+    }
+  }
+
+  &__burger-menu {
+    display: none;
+
+    @media @bw1340 {
+      display: block;
     }
   }
 
@@ -47,6 +58,26 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 1px;
+
+    @media @bw600 {
+      max-width: 160px;
+    }
+
+    @media @bw370 {
+      max-width: 100px;
+    }
+  }
+
+  &__icon {
+    @media @bw600 {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media @bw370 {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &__profile {
@@ -54,6 +85,14 @@
     width: 100%;
     display: flex;
     align-items: center;
+
+    @media @bw600 {
+      max-width: 234px;
+    }
+
+    @media @bw370 {
+      max-width: 180px;
+    }
   }
 
   &__user {
@@ -67,11 +106,30 @@
       font-family: @font_main;
       font-size: @font_size;
       color: @text_light_color;
+
+      @media @bw600 {
+        font-size: 12px;
+      }
+    }
+
+    @media @bw600 {
+      gap: 10px;
+      padding: 0 20px 0 10px;
+    }
+
+    @media @bw370 {
+      gap: 5px;
+      padding: 0 5px;
     }
   }
 
   &__avatar {
     padding-bottom: 1px;
+
+    @media @bw370 {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   &__logout_button {
@@ -79,5 +137,14 @@
     font-family: @font_main;
     font-size: @font_size;
     color: @text_light_color;
+
+    @media @bw600 {
+      margin-left: 20px;
+      font-size: 12px;
+    }
+
+    @media @bw370 {
+      margin-left: 5px;
+    }
   }
 }

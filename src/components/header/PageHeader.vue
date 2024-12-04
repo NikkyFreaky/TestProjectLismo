@@ -1,19 +1,27 @@
 <script setup>
 import BaseIcons from '../BaseIcons.vue'
+import { sidebarVisibility } from '@/stores/sidebar.js'
+
+function toggleMenu() {
+  sidebarVisibility.value = !sidebarVisibility.value
+}
 </script>
 
 <style scoped src="./PageHeader.less"></style>
 
 <template>
   <header class="page-header">
-    <div class="page-header__logo">
-      <a href="#" class="page-header__logo_link">
-        <BaseIcons name="tusur-logo" class="page-header__logo_img" />
+    <div :class="['page-header__logo']">
+      <a href="#" class="page-header__logo-link">
+        <BaseIcons name="tusur-logo" class="page-header__logo-img" />
       </a>
     </div>
 
     <div class="page-header__main">
       <div class="page-header__control">
+        <a href="#" :class="['page-header__burger-menu']" @click="toggleMenu()">
+          <BaseIcons name="burger-menu" class="page-header__icon" />
+        </a>
         <a href="#">
           <BaseIcons name="notification" class="page-header__icon" />
         </a>
