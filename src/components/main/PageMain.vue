@@ -7,11 +7,13 @@ import CourseProgressBar from '../course-progress-bar/CourseProgressBar.vue'
 import CourseContent from '../course-content/CourseContent.vue'
 import CourseTask from '../course-task/CourseTask.vue'
 import PageFooter from '../footer/PageFooter.vue'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 </script>
 
 <style scoped src="./PageMain.less"></style>
 
 <template>
+  <SpeedInsights />
   <Header />
   <Sidebar />
   <main class="page-main">
