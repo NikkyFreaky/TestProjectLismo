@@ -6,27 +6,27 @@ const open = ref(false)
 const teachers = ref([
   {
     name: 'К. К. Константинович',
-    image: 'src/assets/images/course/teachers/konstantinovich.png',
+    image: '@/assets/images/course/teachers/konstantinovich.png',
   },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
-  { name: 'К. К. Константинович', image: 'src/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
+  { name: 'К. К. Константинович', image: '@/assets/images/course/teachers/konstantinovich.png' },
 ])
 
 const count = computed(() => teachers.value.length)
@@ -62,7 +62,11 @@ onUnmounted(() => {
     <button class="additional-teachers__toggle" @click="toggleOpen">(ещё +{{ count }})</button>
     <ul v-if="open" class="additional-teachers__list">
       <li v-for="(teacher, index) in teachers" :key="index" class="additional-teachers__item">
-        <img :src="teacher.image" :alt="teacher.name" class="additional-teachers__image" />
+        <img
+          :src="require('teacher.image')"
+          :alt="teacher.name"
+          class="additional-teachers__image"
+        />
         <span class="additional-teachers__name">{{ teacher.name }}</span>
       </li>
     </ul>
