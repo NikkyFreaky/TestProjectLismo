@@ -3,7 +3,7 @@ import BaseIcons from '../BaseIcons.vue'
 import Button from '../buttons/BaseButtons.vue'
 import SidebarContent from '../sidebar-content/SidebarContent.vue'
 
-import { sidebarVisibility } from '@/stores/sideBar.js'
+import { sidebarVisibility } from '@/stores/sidebar.js'
 </script>
 
 <style scoped src="./PageSidebar.less"></style>
