@@ -1,13 +1,12 @@
 <script setup>
-import Header from './components/header/PageHeader.vue'
-import Sidebar from './components/sidebar/PageSidebar.vue'
 import Main from './components/main/PageMain.vue'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 </script>
 
 <template>
   <div>
-    <!-- <Header /> -->
+    <SpeedInsights />
+
     <Main />
-    <!-- <Sidebar /> -->
   </div>
 </template>
